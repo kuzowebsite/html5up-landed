@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <h1><a href="/index.html">Home</a></h1>
+    <h1 class="title">本</h1>
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="/images/nom1.png" alt="Image">
+      <div class="slider__info">
+        <h2 ><li><a href="https://www.3anet.co.jp/data/2300/?detailFlg=0&pNo=1">Mina no nihongo 1</a></li></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+        <img class="slider__image" src="/images/nom2.png" alt="Image">
+        <div class="slider__info">
+          <h2 ><li><a href="https://www.3anet.co.jp/data/2400/?detailFlg=0&pNo=1">Mina no nihongo 2</a></li></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+        <img class="slider__image" src="/images/nom3.png" alt="Image">
+        <div class="slider__info">
+          <h2 ><li><a href="https://www.3anet.co.jp/data/3878/?detailFlg=0&pNo=1">JLPT Moji/Goi N5 Pointo & Purakutisu</a></li></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+        <img class="slider__image" src="/images/nom4.png" alt="Image">
+        <div class="slider__info">
+          <h2 ><li><a href="https://www.3anet.co.jp/data/3606/?detailFlg=0">Shin Kanzen Masuta Bunpo Nihongo Noryoku Shiken N4</a></li></h2>
+      </div>
+    </div>
+  </div>
+  <div class="slider__nav">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+  </div>
+</div>
+</body>
+</html>
