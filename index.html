@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Japanese website</title>
@@ -13,6 +8,10 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>	
+				<video autoplay loop muted plays-inline class="background-clip">
+				<source src="/images/japanpm4.mp4" type="video/mp4">
+			</video>
+		<div class="container">
 			<!-- Header -->
 				<header id="header">
 					<h1 id="logo"><a href="index.html">日本語</a></h1>
@@ -26,7 +25,7 @@
 									<li><a href="kanji/index.html">Ханз,үсэг</a></li>
 									<li><a href="book/book.html">Ном</a></li>
 									<li>
-										<a href="#">Games</a>
+										<a href="#"><h5>Games</h5></a>
 										<ul>
 											<li><a href="game/index.html">үсэг холбох тоглоом</a></li>
 											<li><a href="#">Option 2</a></li>
@@ -43,22 +42,15 @@
 				</header>
 
 			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>日本語のレッスン</h2>
-							<p>	みんなの日本語初級</p>
-							<p>日本語の学習をお手伝いします。<br />
-							</p>頑張れば成功できるよ。</p>
-						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
-				</section>
-
+				
+			<div class="content">
+				<a href="#">Start Learning</a>
+			</div>
+		</div>
+			
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/japan.jpg" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
@@ -96,7 +88,7 @@
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</section>
 				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/japan2.webp" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
@@ -224,6 +216,25 @@
 		</div>
 
 		<!-- Scripts -->
+		<script>
+			// Get the video
+			var video = document.getElementById("myVideo");
+			
+			// Get the button
+			var btn = document.getElementById("myBtn");
+			
+			// Pause and play the video, and change the button text
+			function myFunction() {
+			  if (video.paused) {
+				video.play();
+				btn.innerHTML = "Pause";
+			  } else {
+				video.pause();
+				btn.innerHTML = "Play";
+			  }
+			}
+			</script>
+			
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
