@@ -18,15 +18,33 @@
   }
   
   .title {
+    background-color: #fdfbfb;
+    border-radius: 6px;
     font-size: 2.5rem;
     font-family: system-ui;
     line-height: 1.1;
-    font-weight: 300;
-    color: #fdfbfb;
+    color: #040404;
     margin: 4rem auto 1rem;
     width: 85%;
-    max-width: 1280px;
+    max-width: 40px;
   }
+  .title:hover{
+    background-color: aqua;
+    }
+    .Home {
+      background-color: #fdfbfb;
+      border-radius: 6px;
+      font-size: 2.5rem;
+      font-family: system-ui;
+      line-height: 1.1;
+      color: #040404;
+      margin: 4rem auto 1rem;
+      width: 85%;
+      max-width: 115px;
+    }
+    .Home:hover{
+      background-color: aqua;
+      }
   
   .slider {
     width: 85%;
